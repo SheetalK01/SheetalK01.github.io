@@ -37,3 +37,7 @@ Playwright scripts with Claude. React, Spring Boot, FastAPI, MySQL and 261 autom
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/sheetal-khadanga) · [GitHub](https://github.com/SheetalK01) · [Email](mailto:khadangasheetal@gmail.com)
+
+## License
+
+© 2026 Sheetal Khadanga. **All rights reserved.** The design and code are shared for viewing only; see [LICENSE](LICENSE).

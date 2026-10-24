@@ -268,7 +268,6 @@
     { label: 'Download resume (PDF)', icon: '📄', hint: 'file', run: () => { const a = document.createElement('a'); a.href = 'assets/Sheetal_Khadanga_Resume.pdf'; a.download = ''; a.click(); } },
     { label: 'Copy email address', icon: '📋', hint: 'action', run: copyEmail },
     { label: 'Toggle light / dark mode', icon: '🌓', hint: 'action', run: toggleTheme },
-    { label: 'Open TestPilot AI on GitHub', icon: '🧪', hint: 'link', run: () => window.open('https://github.com/SheetalK01/testpilot-ai', '_blank', 'noopener') },
     { label: 'Open GitHub profile', icon: '🐙', hint: 'link', run: () => window.open('https://github.com/SheetalK01', '_blank', 'noopener') },
     { label: 'Open LinkedIn', icon: '💼', hint: 'link', run: () => window.open('https://www.linkedin.com/in/sheetal-khadanga', '_blank', 'noopener') },
   ];

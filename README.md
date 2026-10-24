@@ -31,7 +31,7 @@ python3 -m http.server 8000
 
 ## Featured project
 
-**[TestPilot AI](https://github.com/SheetalK01/testpilot-ai)**: turns user stories into test cases and
+**TestPilot AI**: turns user stories into test cases and
 Playwright scripts with Claude. React, Spring Boot, FastAPI, MySQL and 261 automated tests.
 
 ## Contact

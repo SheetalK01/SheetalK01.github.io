@@ -204,10 +204,31 @@
   });
   termObserver.observe(termBody);
 
+  /* ---------- EvalPilot screenshot tabs ---------- */
+  const epView = $('#ep-view');
+  const epTabs = $$('[data-gallery="ep"] [role="tab"]');
+  const epAlt = { landing: 'EvalPilot landing page', dashboard: 'EvalPilot dashboard', run: 'Live test run with the flight strip', redteam: 'Red-team risk report with threat radar', traces: 'Live traces feed and usage' };
+  let epShot = 'landing';
+  function syncEp() {
+    if (!epView) return;
+    const theme = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
+    const img = new Image();
+    img.src = `assets/img/evalpilot/${epShot}-${theme}.jpg`;
+    img.alt = epAlt[epShot];
+    epView.replaceChildren(img);
+  }
+  epTabs.forEach((tab) => tab.addEventListener('click', () => {
+    epTabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
+    epShot = tab.dataset.shot;
+    syncEp();
+  }));
+  new MutationObserver(syncEp).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+  syncEp();
+
   /* ---------- Featured project media tabs ---------- */
   const shotView = $('#shot-view');
   const video = $('#tp-video');
-  const tabs = $$('.media-tabs [role="tab"]');
+  const tabs = $$('.media-tabs:not([data-gallery]) [role="tab"]');
   let currentShot = 'video';
   const shots = {
     landing: { light: 'landing-light.png', dark: 'landing-dark.png', alt: 'TestPilot AI landing page' },

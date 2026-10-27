@@ -300,21 +300,55 @@
         </div>
       </article>
 
-      <div class="proj-grid">
-        <article class="card proj featured-2 reveal spot">
-          <div class="proj-top"><span class="proj-emoji">🛡️</span><span class="muted small">2026 · Full stack + QA</span></div>
-          <h3>EvalPilot</h3>
-          <p class="proj-tagline small">Test your AI before your users do.</p>
+      <!-- Featured: EvalPilot -->
+      <article class="card featured featured-rev reveal spot" id="evalpilot">
+        <div class="featured-copy">
+          <div class="proj-title">
+            <span class="proj-emoji big">🛡️</span>
+            <div>
+              <span class="badge-featured">★ Featured</span>
+              <h3>EvalPilot</h3>
+            </div>
+          </div>
+          <p class="proj-tagline">Test your AI before your users do.</p>
           <p>
-            A platform to test, red-team and monitor AI chatbots: test suites with rule-based and LLM-as-judge
-            checks, live test runs over WebSockets with run-to-run regression diffs, a 26-attack red-team library
-            with risk scoring, production tracing through an npm SDK, and a CLI that fails CI when AI quality drops.
-            Covered by 700+ automated tests across unit, integration, contract, E2E, security, accessibility and load.
+            A platform to <strong>test, red-team and monitor AI chatbots</strong>. Write test suites with
+            rule-based and <strong>LLM-as-judge</strong> checks, watch runs stream in live over WebSockets,
+            compare runs to catch regressions, attack the bot with a <strong>26-prompt red-team library</strong>
+            for a risk score, trace production traffic through an npm SDK, and fail CI when AI quality drops.
           </p>
+          <div class="metrics">
+            <div><strong>700+</strong><span>automated tests</span></div>
+            <div><strong>26</strong><span>red-team attacks</span></div>
+            <div><strong>7</strong><span>CI jobs, all green</span></div>
+          </div>
+          <div class="stack-rows">
+            <div><span class="stack-label">Frontend</span><span class="chips"><span>Next.js 15</span><span>TypeScript</span><span>Tailwind</span><span>Recharts</span></span></div>
+            <div><span class="stack-label">Backend</span><span class="chips"><span>NestJS</span><span>Socket.IO</span><span>BullMQ</span><span>Redis</span><span>Prisma</span><span>MySQL</span></span></div>
+            <div><span class="stack-label">AI</span><span class="chips"><span>Claude API</span><span>LLM-as-judge</span><span>Red-teaming</span></span></div>
+            <div><span class="stack-label">QA</span><span class="chips"><span>Playwright</span><span>Jest</span><span>Vitest</span><span>Pact</span><span>axe</span><span>k6</span></span></div>
+            <div><span class="stack-label">DevOps</span><span class="chips"><span>Docker</span><span>GitHub Actions</span></span></div>
+          </div>
           <p class="muted em">TestPilot uses AI for testing. EvalPilot tests AI.</p>
-          <div class="chips"><span>Next.js</span><span>TypeScript</span><span>NestJS</span><span>Socket.IO</span><span>BullMQ</span><span>Redis</span><span>Prisma</span><span>MySQL</span><span>Claude API</span><span>Playwright</span><span>Pact</span><span>k6</span></div>
-        </article>
+        </div>
+        <div class="featured-media">
+          <div class="media-tabs" role="tablist" aria-label="EvalPilot screenshots" data-gallery="ep">
+            <button role="tab" aria-selected="true" data-shot="landing">Landing</button>
+            <button role="tab" aria-selected="false" data-shot="dashboard">Dashboard</button>
+            <button role="tab" aria-selected="false" data-shot="run">Live run</button>
+            <button role="tab" aria-selected="false" data-shot="redteam">Red-team</button>
+            <button role="tab" aria-selected="false" data-shot="traces">Traces</button>
+          </div>
+          <div class="browser">
+            <div class="browser-bar"><span></span><span></span><span></span><em>localhost:3000 · EvalPilot</em></div>
+            <div class="browser-view" id="ep-view">
+              <img src="assets/img/evalpilot/landing-dark.jpg" alt="EvalPilot landing page" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </article>
 
+      <div class="proj-grid">
         <article class="card proj reveal spot">
           <div class="proj-top"><span class="proj-emoji">🎵</span><span class="muted small">KodNest · 2023–24</span></div>
           <h3>Tune Hub</h3>

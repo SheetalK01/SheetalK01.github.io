@@ -207,13 +207,13 @@
   /* ---------- EvalPilot screenshot tabs ---------- */
   const epView = $('#ep-view');
   const epTabs = $$('[data-gallery="ep"] [role="tab"]');
-  const epAlt = { landing: 'EvalPilot landing page', dashboard: 'EvalPilot dashboard', run: 'Live test run with the flight strip', redteam: 'Red-team risk report with threat radar', traces: 'Live traces feed and usage' };
-  let epShot = 'landing';
+  const epAlt = { demo: 'EvalPilot demo: a live test run and red-team report', landing: 'EvalPilot landing page', dashboard: 'EvalPilot dashboard', run: 'Live test run with the flight strip', redteam: 'Red-team risk report with threat radar', traces: 'Live traces feed and usage' };
+  let epShot = 'demo';
   function syncEp() {
     if (!epView) return;
     const theme = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
     const img = new Image();
-    img.src = `assets/img/evalpilot/${epShot}-${theme}.jpg`;
+    img.src = epShot === 'demo' ? 'assets/img/evalpilot/demo.gif' : `assets/img/evalpilot/${epShot}-${theme}.jpg`;
     img.alt = epAlt[epShot];
     epView.replaceChildren(img);
   }

@@ -1,308 +1,225 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sheetal Khadanga · QA Engineer</title>
-  <meta name="description" content="Sheetal Khadanga, QA Engineer in Bengaluru. Playwright test automation, full-stack development and testing for AI products." />
+  <title>Sheetal Khadanga | QA Engineer</title>
+  <meta name="description" content="Portfolio of Sheetal Khadanga, QA Engineer from Bengaluru. Test automation with Playwright, API testing and full stack projects." />
   <meta name="author" content="Sheetal Khadanga" />
-  <meta name="theme-color" content="#f4efe6" />
-  <link rel="canonical" href="https://sheetalk01.github.io/" />
-
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Sheetal Khadanga · QA Engineer" />
-  <meta property="og:description" content="I test software for a living, and I build it too." />
+  <meta property="og:title" content="Sheetal Khadanga | QA Engineer" />
+  <meta property="og:description" content="QA Engineer. Playwright automation, API testing and full stack projects." />
   <meta property="og:url" content="https://sheetalk01.github.io/" />
   <meta property="og:image" content="https://sheetalk01.github.io/assets/img/og.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <script>
-    (function () {
-      try {
-        var t = localStorage.getItem('sk-theme');
-        if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-        document.documentElement.setAttribute('data-theme', t);
-      } catch (e) {}
-    })();
-  </script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header">
-    <div class="wrap header-inner">
-      <a href="#top" class="name-mark">Sheetal Khadanga</a>
-      <nav aria-label="Main">
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="header-actions">
-        <button class="text-btn" id="theme-toggle" aria-label="Switch colour theme"><span class="theme-label">Dark</span></button>
-        <a class="text-btn strong" href="assets/Sheetal_Khadanga_Resume.pdf" download>Resume</a>
-        <button class="text-btn menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
-      </div>
+  <header class="navbar">
+    <div class="container nav-row">
+      <a href="#home" class="brand">Sheetal Khadanga</a>
+      <button class="menu-btn" id="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </header>
 
-  <main id="main">
-    <!-- Intro -->
-    <section class="wrap intro" id="top">
-      <p class="kicker">QA Engineer · Bengaluru, India</p>
-      <h1>I test software for a living, and I&nbsp;build it&nbsp;too.</h1>
-      <div class="intro-grid">
-        <div class="intro-text">
-          <p>
-            I'm Sheetal. At <strong>Zenalyst.AI</strong> I built a Playwright automation framework from scratch
-            for a financial analytics platform: 95 suites, 700+ test cases, running on staging and production
-            with one report in the team's inbox after every run.
-          </p>
-          <p>
-            Outside work I build full-stack products and test them properly. My two recent ones are about AI:
-            <a href="#testpilot">TestPilot AI</a> uses AI to write tests, and <a href="#evalpilot">EvalPilot</a>
-            tests AI chatbots.
-          </p>
-          <p class="link-row">
-            <a href="#work">See my work</a>
-            <a href="assets/Sheetal_Khadanga_Resume.pdf" download>Resume (PDF)</a>
-            <a href="https://github.com/SheetalK01" target="_blank" rel="noopener">GitHub</a>
-            <a href="https://www.linkedin.com/in/sheetal-khadanga" target="_blank" rel="noopener">LinkedIn</a>
-          </p>
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="hello">Hi, I'm</p>
+        <h1>Sheetal Khadanga</h1>
+        <p class="role">QA Engineer &middot; Bengaluru</p>
+        <p class="hero-text">
+          I work on test automation with Playwright and I also like building small full stack apps.
+          Currently looking for QA Automation, SDET or Full Stack Developer roles.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="assets/Sheetal_Khadanga_Resume.pdf" download>Download Resume</a>
+          <a class="btn btn-outline" href="#contact">Contact Me</a>
         </div>
-        <aside class="note" aria-label="Availability">
-          <p class="note-title">Currently</p>
-          <p>Looking for <strong>QA Automation, SDET and Full Stack</strong> roles. Available to join immediately, in Bengaluru or remote.</p>
-          <dl class="facts">
-            <div><dt>700+</dt><dd>test cases automated at work</dd></div>
-            <div><dt>95</dt><dd>Playwright suites built</dd></div>
-            <div><dt>960+</dt><dd>tests across my two projects</dd></div>
-          </dl>
-        </aside>
+        <p class="hero-links">
+          <a href="https://github.com/SheetalK01" target="_blank" rel="noopener">GitHub</a> |
+          <a href="https://www.linkedin.com/in/sheetal-khadanga" target="_blank" rel="noopener">LinkedIn</a> |
+          <a href="mailto:khadangasheetal@gmail.com">khadangasheetal@gmail.com</a>
+        </p>
       </div>
     </section>
 
-    <!-- Experience -->
-    <section class="wrap section" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <article class="job">
-        <div class="job-meta">
-          <p>Aug 2025 – Oct 2026</p>
-          <p class="muted">Bengaluru · Full-time</p>
-        </div>
-        <div class="job-body">
-          <h3>QA Engineer, <span class="accent">Zenalyst.AI</span></h3>
-          <p class="muted">AI-powered fintech startup. I owned end-to-end quality for two products.</p>
-          <ul>
-            <li>Built a Playwright (JavaScript) framework from scratch: 95 test suites and 700+ test cases covering login, RBAC, bank statements, receipts, classification rules, the scheduler, data sources and an AI chatbot.</li>
-            <li>Made the whole run hands-off: suites run on staging and production, and one email reaches the team with a pass/fail summary, an Excel report, and screenshots and videos of every failure.</li>
-            <li>Organised tagged smoke, regression and module-wise suites with session-reuse login, so a release check takes minutes, not hours.</li>
-            <li>Tested beyond the happy path: API, RBAC/IDOR security, accessibility (WCAG, axe) and performance.</li>
-            <li>Also built and fixed frontend and backend features with the developers.</li>
-          </ul>
-          <p class="stack">Playwright · JavaScript · Node.js · Postman · ExcelJS · axe-core · Git</p>
-        </div>
-      </article>
+    <section class="section" id="about">
+      <div class="container narrow">
+        <h2>About Me</h2>
+        <p>
+          I'm from Odisha. I did my BCA from Presidency College, Berhampur and my MCA from NIST Berhampur.
+          After that I joined KodNest for their Full Stack Java program, which is where I really got into
+          Java, Spring Boot and building web apps.
+        </p>
+        <p>
+          My first job was as a QA Engineer at Zenalyst.AI, a fintech startup in Bengaluru. I started the
+          Playwright automation there and kept growing it until it covered most of the product. Because it
+          was a small team I also picked up some frontend and backend tasks, and I liked that a lot.
+        </p>
+        <p>
+          In my free time I built two projects around AI and testing, TestPilot AI and EvalPilot, mostly
+          to learn how AI features can be used in testing and how they should be tested.
+        </p>
+      </div>
     </section>
 
-    <!-- Work -->
-    <section class="wrap section" id="work">
-      <h2 class="section-title">Selected work</h2>
-
-      <article class="project" id="evalpilot">
-        <div class="project-head">
-          <p class="project-num">01</p>
-          <div>
-            <h3>EvalPilot</h3>
-            <p class="project-line">Test your AI before your users do.</p>
+    <section class="section alt" id="experience">
+      <div class="container narrow">
+        <h2>Experience</h2>
+        <div class="job">
+          <div class="job-top">
+            <h3>QA Engineer &ndash; Zenalyst.AI</h3>
+            <span class="date">Aug 2025 &ndash; Oct 2026</span>
           </div>
-          <p class="project-year">2026 · Full stack + QA</p>
-        </div>
-        <figure class="shots" data-gallery="ep">
-          <div class="shot-tabs" role="tablist" aria-label="EvalPilot screens">
-            <button role="tab" aria-selected="true" data-shot="demo">Demo</button>
-            <button role="tab" aria-selected="false" data-shot="dashboard">Dashboard</button>
-            <button role="tab" aria-selected="false" data-shot="run">Live run</button>
-            <button role="tab" aria-selected="false" data-shot="redteam">Red-team</button>
-            <button role="tab" aria-selected="false" data-shot="traces">Traces</button>
-          </div>
-          <div class="shot-frame" id="ep-view">
-            <img src="assets/img/evalpilot/demo.gif" alt="EvalPilot demo: a live test run and a red-team report" loading="lazy" />
-          </div>
-        </figure>
-        <div class="project-body">
-          <div>
-            <p>
-              Chatbot answers change with every prompt or model update, they can be wrong, and they can be
-              attacked. EvalPilot lets you connect a chatbot, write test suites with rule checks or an AI judge,
-              watch results stream in live, compare runs to catch regressions, run 26 attack prompts for a risk
-              score, trace production traffic through an npm SDK, and fail a CI build when quality drops.
-            </p>
-          </div>
-          <dl class="spec">
-            <div><dt>Built with</dt><dd>Next.js 15, TypeScript, NestJS, Socket.IO, BullMQ, Redis, Prisma, MySQL, Claude API</dd></div>
-            <div><dt>Tested with</dt><dd>700+ tests: Jest, Vitest, Pact contracts, Playwright (E2E, API, security, accessibility, visual), k6 load</dd></div>
-            <div><dt>Shipped with</dt><dd>Docker, GitHub Actions (7 jobs)</dd></div>
-          </dl>
-        </div>
-      </article>
-
-      <article class="project" id="testpilot">
-        <div class="project-head">
-          <p class="project-num">02</p>
-          <div>
-            <h3>TestPilot AI</h3>
-            <p class="project-line">Turn user stories into test cases in seconds.</p>
-          </div>
-          <p class="project-year">2026 · Full stack + AI</p>
-        </div>
-        <figure class="shots" data-gallery="tp">
-          <div class="shot-tabs" role="tablist" aria-label="TestPilot AI screens">
-            <button role="tab" aria-selected="true" data-shot="video">Demo</button>
-            <button role="tab" aria-selected="false" data-shot="dashboard">Dashboard</button>
-            <button role="tab" aria-selected="false" data-shot="story">Test cases</button>
-            <button role="tab" aria-selected="false" data-shot="playwright">Playwright</button>
-          </div>
-          <div class="shot-frame" id="tp-view">
-            <video id="tp-video" src="assets/video/testpilot-demo.mp4" poster="assets/img/landing-light.png" controls muted playsinline preload="metadata"></video>
-          </div>
-        </figure>
-        <div class="project-body">
-          <div>
-            <p>
-              Paste a user story and Claude writes structured positive, negative and edge-case test cases.
-              Review and edit them, export a formatted Excel sheet, or turn them into a ready-to-run Playwright
-              script. Built like a production system: a secured API, validated AI output, an accessible UI and
-              tests at every layer.
-            </p>
-          </div>
-          <dl class="spec">
-            <div><dt>Built with</dt><dd>React, Vite, Tailwind, Java 17, Spring Boot 4, JWT, Flyway, MySQL, Python FastAPI, Claude API</dd></div>
-            <div><dt>Tested with</dt><dd>261 tests: JUnit, pytest, Playwright (UI, API, security, accessibility, visual), k6; 99% service coverage</dd></div>
-            <div><dt>Shipped with</dt><dd>Docker, Nginx, GitHub Actions (6 jobs)</dd></div>
-          </dl>
-        </div>
-      </article>
-
-      <article class="project project-small">
-        <div class="project-head">
-          <p class="project-num">03</p>
-          <div>
-            <h3>Tune Hub</h3>
-            <p class="project-line">Music streaming web app.</p>
-          </div>
-          <p class="project-year">2024 · KodNest training</p>
-        </div>
-        <div class="project-body">
-          <div>
-            <p>
-              Playlists and membership plans on a layered Controller–Service–Repository backend, with a
-              responsive JSP and Bootstrap front end.
-            </p>
-          </div>
-          <dl class="spec">
-            <div><dt>Built with</dt><dd>Java, Spring Boot, Spring MVC, Hibernate, MySQL, JSP, Bootstrap</dd></div>
-          </dl>
-        </div>
-      </article>
-    </section>
-
-    <!-- Skills -->
-    <section class="wrap section" id="skills">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills">
-        <div>
-          <h3>Testing</h3>
+          <p class="job-place">Bengaluru, Full time</p>
           <ul>
-            <li>Playwright (POM, fixtures, tags)</li>
-            <li>API testing, Postman</li>
-            <li>Security: RBAC, IDOR</li>
-            <li>Accessibility: axe, WCAG</li>
-            <li>Performance: k6</li>
-            <li>Contract testing: Pact</li>
-            <li>Visual regression</li>
-            <li>JUnit, pytest, Jest, Vitest</li>
-            <li>Manual, regression, smoke</li>
-            <li>Test planning</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Frontend</h3>
-          <ul>
-            <li>JavaScript, TypeScript</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>HTML, CSS</li>
-            <li>Tailwind CSS, Bootstrap</li>
-            <li>Vite</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Backend &amp; data</h3>
-          <ul>
-            <li>Java, Spring Boot</li>
-            <li>Spring Security, JWT</li>
-            <li>Hibernate / JPA</li>
-            <li>Node.js, NestJS</li>
-            <li>REST, WebSockets</li>
-            <li>BullMQ, Redis</li>
-            <li>MySQL, SQL</li>
-            <li>Prisma, Flyway</li>
-          </ul>
-        </div>
-        <div>
-          <h3>AI &amp; tools</h3>
-          <ul>
-            <li>Claude API integration</li>
-            <li>LLM-as-judge evaluation</li>
-            <li>AI red-teaming</li>
-            <li>Prompt engineering</li>
-            <li>Python, FastAPI</li>
-            <li>Docker</li>
-            <li>GitHub Actions</li>
-            <li>Git</li>
+            <li>Built the Playwright (JavaScript) automation framework from scratch. It now has 95 test suites and 700+ test cases for login, roles and permissions, bank statements, receipts, rules, scheduler, data sources and the chatbot.</li>
+            <li>Set up smoke, regression and module wise test runs that can run on both staging and production.</li>
+            <li>After every run the team gets one email with an Excel report, failure screenshots and links to the HTML reports (ExcelJS, Nodemailer).</li>
+            <li>Did manual, functional, regression and API testing (Postman), and checked security (RBAC/IDOR), accessibility and performance.</li>
+            <li>Worked on some frontend and backend features and bug fixes along with the developers.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- Education -->
-    <section class="wrap section" id="education">
-      <h2 class="section-title">Education</h2>
-      <ul class="edu">
-        <li><span class="edu-year">2023 – 2024</span><span><strong>Full Stack Java Development</strong>, KodNest Technologies</span></li>
-        <li><span class="edu-year">2021 – 2023</span><span><strong>Master of Computer Applications</strong>, NIST Institute of Science and Technology, Berhampur</span></li>
-        <li><span class="edu-year">2018 – 2021</span><span><strong>Bachelor of Computer Applications</strong>, Presidency College, Berhampur</span></li>
-      </ul>
+    <section class="section" id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects">
+
+          <div class="project-card">
+            <a href="assets/img/evalpilot/demo.gif" target="_blank" rel="noopener" class="project-img">
+              <img src="assets/img/evalpilot/run-light.jpg" alt="EvalPilot test run page" loading="lazy" />
+            </a>
+            <div class="project-info">
+              <h3>EvalPilot</h3>
+              <p>
+                A web app to test AI chatbots. You add test cases for your chatbot, run them and see the
+                results live, compare two runs to find what broke, and run attack prompts (like prompt
+                injection) to check if the bot is safe. It also has a small npm SDK to log real chatbot
+                calls and a CLI that can fail the CI build if the pass rate drops.
+              </p>
+              <p class="tested"><b>Testing:</b> 700+ tests with Jest, Vitest, Pact, Playwright and k6.</p>
+              <div class="tags">
+                <span>Next.js</span><span>TypeScript</span><span>NestJS</span><span>Redis</span><span>MySQL</span><span>Prisma</span><span>Claude API</span>
+              </div>
+              <p class="project-links">
+                <a href="assets/img/evalpilot/demo.gif" target="_blank" rel="noopener">Watch demo</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <a href="assets/video/testpilot-demo.mp4" target="_blank" rel="noopener" class="project-img">
+              <img src="assets/img/story-light.png" alt="TestPilot AI test cases page" loading="lazy" />
+            </a>
+            <div class="project-info">
+              <h3>TestPilot AI</h3>
+              <p>
+                You paste a user story and it generates test cases (positive, negative and edge cases) using
+                the Claude API. You can edit the test cases, download them as an Excel file, or get a
+                Playwright script for them.
+              </p>
+              <p class="tested"><b>Testing:</b> 261 tests with JUnit, pytest, Playwright and k6.</p>
+              <div class="tags">
+                <span>React</span><span>Spring Boot</span><span>Java</span><span>Python</span><span>FastAPI</span><span>MySQL</span><span>Docker</span>
+              </div>
+              <p class="project-links">
+                <a href="assets/video/testpilot-demo.mp4" target="_blank" rel="noopener">Watch demo</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="project-card small">
+            <div class="project-info">
+              <h3>Tune Hub</h3>
+              <p>
+                A music streaming web app I made during my KodNest training. Users can make playlists and
+                buy a premium membership. Made with Spring Boot and Hibernate using a Controller, Service and
+                Repository structure, and JSP with Bootstrap for the UI.
+              </p>
+              <div class="tags">
+                <span>Java</span><span>Spring Boot</span><span>Spring MVC</span><span>Hibernate</span><span>MySQL</span><span>JSP</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section class="wrap section contact" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <p class="contact-big">Hiring for QA or full stack? <br /><a href="mailto:khadangasheetal@gmail.com">khadangasheetal@gmail.com</a></p>
-      <p class="link-row">
-        <button class="link-btn" id="copy-email" data-email="khadangasheetal@gmail.com">Copy email</button>
-        <a href="tel:+916370090768">+91 63700 90768</a>
-        <a href="https://www.linkedin.com/in/sheetal-khadanga" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/SheetalK01" target="_blank" rel="noopener">GitHub</a>
-      </p>
+    <section class="section alt" id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-box">
+            <h3>Testing</h3>
+            <div class="tags">
+              <span>Playwright</span><span>Manual Testing</span><span>Regression</span><span>API Testing</span><span>Postman</span><span>Security (RBAC/IDOR)</span><span>Accessibility (axe)</span><span>k6</span><span>Pact</span><span>JUnit</span><span>pytest</span><span>Jest</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3>Languages</h3>
+            <div class="tags">
+              <span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3>Frameworks</h3>
+            <div class="tags">
+              <span>React</span><span>Next.js</span><span>Spring Boot</span><span>Spring MVC</span><span>Hibernate</span><span>Node.js</span><span>NestJS</span><span>FastAPI</span><span>Bootstrap</span><span>Tailwind</span>
+            </div>
+          </div>
+          <div class="skill-box">
+            <h3>Database &amp; Tools</h3>
+            <div class="tags">
+              <span>MySQL</span><span>Oracle</span><span>Redis</span><span>Git</span><span>GitHub Actions</span><span>Docker</span><span>VS Code</span><span>Claude API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container narrow">
+        <h2>Education</h2>
+        <div class="edu">
+          <div><h3>Full Stack Java Development</h3><p>KodNest Technologies, 2023 &ndash; 2024</p></div>
+          <div><h3>MCA (Master of Computer Applications)</h3><p>NIST Institute of Science and Technology, Berhampur, 2021 &ndash; 2023</p></div>
+          <div><h3>BCA (Bachelor of Computer Applications)</h3><p>Presidency College, Berhampur, 2018 &ndash; 2021</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="contact">
+      <div class="container narrow center">
+        <h2>Contact</h2>
+        <p>If you have an opening or just want to talk, feel free to reach out.</p>
+        <p class="contact-list">
+          Email: <a href="mailto:khadangasheetal@gmail.com">khadangasheetal@gmail.com</a><br />
+          Phone: <a href="tel:+916370090768">+91 6370090768</a><br />
+          LinkedIn: <a href="https://www.linkedin.com/in/sheetal-khadanga" target="_blank" rel="noopener">linkedin.com/in/sheetal-khadanga</a>
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer class="wrap site-footer">
-    <p>© <span id="year">2026</span> Sheetal Khadanga</p>
-    <p class="muted">Bengaluru, India</p>
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Sheetal Khadanga</p>
   </footer>
 
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="assets/js/main.js" defer></script>
 </body>
 </html>

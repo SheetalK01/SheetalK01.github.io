@@ -88,8 +88,10 @@ b { color: var(--ink); font-weight: 600; }
 }
 .passed { margin-top: 16px; font-family: Menlo, Consolas, monospace; color: #3ecf7f; font-size: 14px; }
 
-.num { display: flex; flex-direction: column; justify-content: flex-end; }
-.num .big { font-size: 56px; font-weight: 700; line-height: 1; letter-spacing: -2px; margin-bottom: 6px; }
+.num { display: flex; flex-direction: column; justify-content: flex-start; }
+.lav .tile-label { color: var(--lav-ink); }
+.peach .tile-label { color: var(--peach-ink); }
+.num .big { font-size: 48px; font-weight: 700; line-height: 1.1; letter-spacing: -1.5px; margin-bottom: 4px; }
 .lav { background: var(--lav); } .lav .big { color: var(--lav-ink); }
 .peach { background: var(--peach); } .peach .big { color: var(--peach-ink); }
 .mint { background: var(--mint); }
@@ -102,9 +104,9 @@ b { color: var(--ink); font-weight: 600; }
 .job-list li { position: relative; padding: 6px 0; }
 .job-list li::before { content: ""; position: absolute; left: -18px; top: 15px; width: 6px; height: 6px; border-radius: 50%; background: var(--peach-ink); }
 
-.place { display: flex; flex-direction: column; justify-content: center; }
+.place { display: flex; flex-direction: column; justify-content: flex-start; }
 .place .tile-label { color: var(--sky-ink); }
-.place-name { font-size: 34px; font-weight: 600; color: var(--ink); line-height: 1.1; margin-bottom: 4px; }
+.place-name { font-size: 40px; font-weight: 600; color: var(--ink); line-height: 1.1; margin-bottom: 4px; }
 
 .project { grid-column: span 2; grid-row: span 2; display: flex; flex-direction: column; overflow: hidden; padding-bottom: 0; }
 .p-eval { background: #eae6fb; }
